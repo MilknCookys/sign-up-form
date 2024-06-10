@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="imageContainer">
+      <img src="inferno.jpeg" alt="Inferno B site" />
+    </div>
+    <div id="contentContainer">
+      <div id="headingContainer">
+        <h1>
+          This is not a real CS2 bootcamp! Signing up to this form will not do
+          anything.
+          <br />
+          <br />
+          But you <i>know</i> you want to.
+        </h1>
+      </div>
+      <div id="formContainer">
+        <form action="" method="">
+          <div id="shadowContainer">
+            <div>
+              <h2>Let's do this!</h2>
+            </div>
+
+            <div id="nameContainer">
+              <div id="first-name">
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" id="first-name" name="first-name" />
+              </div>
+              <div id="last-name">
+                <label for="last-name">LAST NAME</label>
+                <input type="text" id="last-name" name="last-name" />
+              </div>
+            </div>
+
+            <div id="contactContainer">
+              <div id="email">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email" />
+              </div>
+              <div id="phone-number">
+                <label for="phone-number">PHONE NUMBER</label>
+                <input type="tel" id="phone-number" name="phone-number" />
+              </div>
+            </div>
+
+            <div id="passwordContainer">
+              <div id="password-input">
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password" required />
+                <span></span>
+              </div>
+              <div id="confirm-password">
+                <label for="password-confirm">CONFIRM PASSWORD</label>
+                <input
+                  type="password"
+                  id="password-confirm"
+                  name="password"
+                  required
+                />
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <span id="log-in">Log in</span></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

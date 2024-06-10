@@ -1,0 +1,243 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+form,
+input,
+textarea,
+select,
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+}
+
+input:focus {
+  outline: none; /* Remove default focus outline */
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(/fonts/roboto-regular-webfont.woff2),
+    url(/fonts/roboto-regular-webfont.woff1);
+}
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: "Roboto";
+
+  margin-left: 80px;
+}
+
+#imageContainer {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contentContainer {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#headingContainer {
+  flex: 1;
+
+  margin-left: 80px;
+}
+
+#formContainer {
+  flex: 2;
+  width: 100%;
+
+  display: flex;
+}
+
+#nameContainer,
+#contactContainer,
+#passwordContainer {
+  display: flex;
+  flex-direction: row;
+
+  margin-left: 80px;
+  margin-bottom: 25px;
+  gap: 75px;
+}
+
+#first-name,
+#last-name,
+#email,
+#phone-number,
+#password-input,
+#confirm-password {
+  display: flex;
+  flex-direction: column;
+}
+
+#shadowContainer {
+  box-shadow: 1px 0px 7px 2px rgba(45, 45, 45, 0.189);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  gap: 20px;
+}
+
+h2 {
+  margin-left: 80px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+label {
+  color: rgb(99, 99, 99);
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: smaller;
+}
+
+input {
+  width: 250px;
+  border: 1px solid rgb(213, 213, 213);
+  border-radius: 5px;
+
+  padding: 2px 5px;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: larger;
+
+  background-color: #af8844;
+  color: white;
+  padding: 10px 30px;
+  margin: 25px 80px;
+  border-radius: 8px;
+}
+
+button:hover {
+  cursor: pointer;
+
+  background-color: #896a34;
+}
+
+input:focus {
+  border: 1px solid rgb(136, 136, 255);
+  box-shadow: 3px 3px 7px 2px rgb(0 0 0 / 15%);
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+input:required + span::after {
+  content: "*";
+  color: black;
+
+  font-family: "Roboto";
+  font-size: small;
+}
+
+#log-in {
+  color: #896a34;
+  font-family: "Roboto";
+
+  font-weight: bold;
+}
+
+#headingContainer {
+  width: 700px;
+  display: flex;
+  align-items: center;
+}
